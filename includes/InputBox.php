@@ -660,7 +660,7 @@ class InputBox {
 		}
 
 		// Insert a line break if configured to do so
-		$this->mBR = ( strtolower( $this->mBR ) == "no" ) ? ' ' : '<br />';
+		$this->mBR = ( strtolower( $this->mBR ) == "no" ) ? '' : '<br />';
 
 		// Validate the width; make sure it's a valid, positive integer
 		$this->mWidth = intval( $this->mWidth <= 0 ? 50 : $this->mWidth );
